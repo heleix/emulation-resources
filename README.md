@@ -1,14 +1,7 @@
-# Minimal Theme
+# Emulation for Archivists
 
-[Demo the Theme](http://orderedlist.github.com/minimal/)
-
-This is the raw HTML and styles that are used for the *minimal* theme on [GitHub Pages](http://pages.github.com/).
-
-Syntax highlighting is provided on GitHub Pages by [Pygments](http://pygments.org).
+Created by Brian Belak and Patricia Ledesma Villon for Professor Anne Gilliland's Winter 2021 Information Studies 241: Digital Preservation class at UCLA.
 
 # License
 
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/).
-
-
-
