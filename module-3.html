@@ -32,28 +32,57 @@
       <section>
         <h1>Fun with emulators</h1>
         
-        <p>Now let's have some fun with emulators!</p>
+        <p>We will end this module by introducing you to a few emulation options you can use right now and guide you through solving an example access problem. Let's have some fun with emulators!</p>
         
         <h2>Local emulators</h2>
         
         <p>Local emulators are the most robust and run on a dedicated machine in your reading room or physical location.</p>
         
-        <p><a href="https://gitlab.com/EG-tech/emulation-resources">List of lots of emulators!</a><p>
+        <p><a href="https://gitlab.com/EG-tech/emulation-resources">This useful guide from EaaSI's Ethan Gates contains a list of emulators.</a><p>
         
         <p>We encourage you to explore installing an emulator on your computer, but for simplicity for this module, we will focus on emulation in a browser.</p>
               
         <h2>Browser-based emulators</h2>
         
-        <p>Emulators that run in a browser take advantage of each user's processing capabilities to render the emulator and any emulated content. These emulators have the advantage of being accessible online to users outside of your reading room or physical location. A downside is the potentially significant load passed onto the user, rather than a dedicated machine on-site.</p>
+        <p>Emulators that run in a browser take advantage of the processing capabilities from each user's device to render the emulator and any emulated content. These emulators have the advantage of being accessible online to users outside of your reading room or physical location. A downside is the potentially significant load passed onto the user, rather than a dedicated machine on-site.</p>
         
         <p>Many emulators that run in browsers are written in Javascript. The Internet Archive's emulator from the previous lesson is <a href="https://help.archive.org/hc/en-us/articles/360004715631-The-Internet-Arcade">JSMESS</a>, a Javascript port of the MESS and MAME emulators.</p>
         
         <p><a href="https://github.com/fcambus/jsemu">List of lots of Javascript browser emulators!</a></p>
         
+        <blockquote>
+          <img src="mouse.png" align="left" />
+        <p>Rhizome's article on Cory Arcangel's <i>Bomb Iraq</i> embeds an emulation of the full original Macintosh TV environment for the Hypercard stack. <a href="https://rhizome.org/editorial/2014/jun/24/emulating-bomb-iraq-arcangel/">Try it out here.</a></p>         
+        </blockquote>
+        
         <h2>Exercise: OldWeb.Today</h2>
         
         <p>To demonstrate the possibilities of browser-based emulators, we will turn to an exercise using Webrecorder's OldWeb.Today emulation site. This project provides access to multiple emulation environments to emulate past browsers and explore archived websites.</p>
         
+        <p>December 31, 2020 marked the official end of life for Adobe Flash on the web, once a popular way to create interactive and dynamic content. Although most websites online today no longer use Flash, viewing archived websites from the WayBack Machine, as well as any straggler websites online still using Flash, requires emulating the Flash plugin no longer available in modern browsers. Many of the emulated browsers on OldWeb.Today contain different versions of Flash.</p>
+        
+        <h3>John Henry Hypercard Stack Emulator</h3>   
+        
+        <p>Let's start with a current website with elements that require Flash. The <a href="http://tmbg.bryceland.com/JHstack.php">John Henry Hypercard Stack Emulator</a> seeks to emulate a promotional item that accompanied the band They Might Be Giants' album <i>John Henry</i> in 1994. This item was created in the same Hypercard program as <i>Bomb Iraq</i> and can no longer run on modern computers.</p>
+        
+        <p>Unfortunately, the emulation created in 2014 is dependent on Flash plugins and will no longer display on 2021 browsers. Visiting the page just shows a blank space where the Hypercard stack should be.</p>
+        
+        <p>With OldWeb.Today, we can emulate the Flash plugin and have fun with They Might Be Giants once more!</p>
+        
+        <ol>
+          <li><p>Go to <a href="https://OldWeb.Today">OldWeb.Today</a> in the browser of your choice. This module was written in Firefox 86.0<p></li>
+          <li><p>Paste the URL of the John Henry Hypercard Stack Emulator in the URL box.</p></li>
+          <li><p>Click the radio button next to "Browse Live Web"</p></li>
+          <li><p>Click "Select a Browser" and choose "Firefox 10" (with Flash 32). Clicking this should launch the emulator.</p></li>
+          <li><p>Wait for emulator to load (this may take several minutes). For best results, leave this page open until the emulator has fully loaded.<p>
+          		<p>NOTE: This may cause your computer to heat up and make loud fan noises. Remember Javascript emulators in-browser require additional computing power that is pushed to the user's device.</p></li>
+          <li><p>Once fully loaded, the <i>John Henry</i> Hypercard stack should be visible. Click in the emulator to control the mouse. Click on an icon to enjoy some signature catchy pop songs!</p></li>
+        </ol>
+        
+        <h3>TBD</h3>
+        
+        <p>Our next exercise will involve accessing an archived website with Flash elements. This time, we won't tell you which browser to emulate. Use what you've learned from this module to determine the appropriate environment!</p>
+          
         <h2>Self-Assessment Questions</h2>
         
         <ul>
