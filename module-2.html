@@ -31,61 +31,78 @@
       <section>
         <h1>What you need for emulation</h1>
         
-        <p>Now that we understand the basics of emulation, the specifics to actually emulate something can vary widely based on the content and presentation needs. These specifics can be very technical very quickly, so in this section we'll focus on larger concepts to consider to implement emulation for access to your archival material.</p>
+        <p>Now that we understand the basics of emulation, the specifics to actually emulate digital content can vary widely based on the technical presentation needs. In this section we'll focus on larger concepts to consider to implement emulation for access to your archival material.</p>
         
-        <h2>Know Your Content!</h2>
+        <h2>Know Your Content</h2>
         
-        <p>You have something you want emulation to help you access, but what is it, exactly? When we use computers to run software and look at files, we are engaging a complex stack that involves hardware, operating system environments, software, and files themselves. Effective emulation will require determining the appropriate combination of these elements to produce the access result you want. Emulation removes the hardware component, but the other three must be considered.</p>
+        <p>You have something you want emulation to help you access, but what is it, exactly? When we use computers to run software and look at files, we are engaging a complex stack that involves hardware, operating system environments, software, and files themselves. Effective emulation will require determining the appropriate combination of these elements to produce the access result you want. While emulation can ease the hardware requirement, the other three must be considered to work together.</p>
         
         <p>[IMAGE OF COMPUTER STACK HERE?]</p>
         
         <h3>Review your documentation</h3>
         
-        <p>Start by looking over any documentation you have to accompany the digital content you want to emulate. Is there any accompanying text or labels that indicate system requirements required to run it? Do you know what kind of computer was originally used to create the file? All documentation will be useful to determining the appropriate emulation environment. In addition, take careful note of any information you can gather while investigating your digital content. This will become important documentation for future archivists!</p>
+        <p>Start by looking over any documentation you have to accompany the digital content you want to emulate. Is there any accompanying text or labels that indicate system requirements required to run it? Do you know what kind of computer was originally used to create the file? All documentation will be useful to determining the appropriate emulation environment.</p> 
+        
+        <p>In the previous module, we looked at "The Would-Be Gentleman" case at Stanford Libraries, in which documentation stored with the game helped the archivists determine the earlier version of Mac OS needed to emulate the software.</p>
+        
+        <blockquote>
+        <img src="tip.png" alt="White speech bubble with a light bulb." align="left" />
+      	<b>Tip:</b> take careful note of any information you can gather while investigating your digital content. This will become important documentation for future archivists!</p>
+        </blockquote>
         
         <h3>Analyzing file formats and content</h3>
         
-        <p>Not all formats with the same extension are actually the same! Tools like <a href="https://mediaarea.net/en/MediaInfo">MediaInfo</a>, <a href="http://jhove.openpreservation.org/">JHOVE</a>, and <a href="https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/">DROID</a> can extract technical information about a file to indicate a corresponding computing environment. DROID refers to the <a href="http://www.nationalarchives.gov.uk/PRONOM/Default.aspx">PRONOM technical registry</a> to identify file formats.</p>
+        <p>File format extensions like .JPG or .PDF can tell you some information about the type of file you have, but this is often insufficient for determining the most appropriate way to view it. Formats with the same extensions are not always exactly the same, and especially for those like JPEG and PDF that have been in use for thirty or more years, different versions with different capabilities may have been released throughout their history. Consider the <a href="http://www.nationalarchives.gov.uk/PRONOM/Format/proFormatSearch.aspx?status=listReport">many different types of PDF</a> described in the <a href="http://www.nationalarchives.gov.uk/PRONOM/Default.aspx">PRONOM Technical Registry</a> to get an idea.
         
-        <p>Understanding the specifics of your file will help determine the appropriate software needed to display it.</p>
+        <p>Tools like <a href="https://mediaarea.net/en/MediaInfo">MediaInfo</a>, <a href="http://jhove.openpreservation.org/">JHOVE</a>, and <a href="https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/">DROID</a> can extract technical information about a file to indicate a corresponding computing environment. DROID refers to PRONOM to identify file formats, and the Library of Congress' <a href="https://www.loc.gov/preservation/digital/formats/index.html">Sustainability of Digital Formats</a> is another useful guide for formats. These tools can be especially useful if you encounter a format you're not immediately familiar with, which could mean it's a good case for emulation.</p>
+        
+        <p>These tools can help gather information about a specific file, but they may not be able to provide details about additional dependencies or requirements. Nonetheless, understanding as much as you can about the specifics of your file will help determine the appropriate software needed to display it.</p>
         
         <h3>Analyzing software</h3>
         
-        <p>All files require software to display their content. Some will require proprietary programs to match proprietary formats (such as Adobe Photoshop files only opening in Adobe). In some cases, alternative or open-source software can be used to access files, even if they weren't the original creation program. Using alternative software requires additional consideration concerning the "look and feel" of the original file (see below).</p>
+        <p>All files require software to display their content, so your emulation environment will also need to include software within it.</p> 
         
-        <p>EaaSI's Universal Virtual Indicator that can match files to required software and dependencies</p>
+        <p>Some files may require proprietary programs to match their proprietary formats (such as Adobe Photoshop files only opening in Adobe programs), which cases you will likely want to emulate that specific software to access the file. Alternative or open-source software may also be an option, even if the program wasn't the original one used to create the file. Using alternative software requires additional consideration concerning the desired "look and feel" of emulation (see below). For example, the open-source image program GIMP can open Photoshop PSD files, but the results will likely not replicate the complex capabilities of Photoshop's editing suite.</p>
         
-        <p>In other cases, emulating software may be the main issue for access. This includes video games and many instances of time-based media.</p>
+        <p>The EaaSI program is developing Universal Virtual Indicator (UVI) that would automatically match files to required software and dependencies, making opening an obsolete file as easy as clicking a link to its appropriate software and environment. In a 2018 blog post, EaaSI's Euan Cochrane describes the process of gathering technical metadata to algorithmically connect formats to software (Cochrane).</p>
+        
+        <p>Emulating software is necessary for opening obsolete files, but in many cases, the software itself may be the main goal for access. This includes video games, time-based media, and other custom programs.</p>
               
-        <p>For software-based artworks, consider the following typology:</p>
+        <p>Patricia Falcao, Annet Dekker, and Pip Laurenson at Tate defined the following typology for software-based artworks, which can be applied more generally for any software. This typology provides consideration of what might be necessary to emulate software to run as intended.</p>
 
         <dl>
           <dt>Contained</dt>
           <dd>Software is wholly contained within itself.</dd>
           <dt>Networked</dt>
-          <dd>Software relies on network connections to access information or perform actions.</dd>
+          <dd>Software relies on network connections to access data or perform actions.</dd>
           <dt>User-dependent</dt>
           <dd>Software relies on user input to function.</dd>
           <dt>Generative</dt>
           <dd>Software is constantly changing as a result of outside connections or input.</dd>
         </dl>
         
+        <p>If your software originated on a physical storage medium, you will likely want to create a disk image both for preservation and for emulation purposes. A disk image is a file that copies the contents of a disk, such as a floppy disk or CD, that can then be stored and mounted without returning to the original, unstable disk medium. An emulated environment can load the disk image in lieu of inserting the disk each time you access it.</p>
+        
         <h3>Analyzing environments</h3>
         
-        <p>The computing environment will ultimately determine your emulation needs. Do you need software that runs on particular versions of Apple Mac operating systems? Windows? As the next lesson will indicate, most emulators focus on emulating a specific environment in which different software and content can be loaded</p>
+        <p>The operating system environment will ultimately determine your emulation needs. Do you need software that runs on particular versions of Apple Mac operating systems? Windows? As the next lesson will indicate, most emulators focus on emulating a specific environment in which different software and content can be loaded.</p>
               
         <h2>Look and Feel</h2>
         
-        <p>Finding an emulation environment and software that can render your digital content may only be the first step to providing access. These may also be described as the "look and feel" of the digital content. 
+        <p>Finding an emulation environment and software that can render your digital content may only be the first step to providing access. As you embark on the process of emulation, you should consider the significant properties of the digital content that you will emulate. These may also be described as the "look and feel" of the digital content. 
         
-        <p>Significant properties differ depending on the nature of the digital object. Is it necessary to provide an exact replica of the digital content as it would have been experienced when originally created? If you are primarily interested in the content of a text document, then software that fails to render all of the original formatting may be sufficient. Alternatively, being able to interact with complex software or video games may be crucial in any emulation.</p>
+        <p>Significant properties differ depending on the nature of the digital object. For your purposes is it necessary to provide an exact replica of the digital content as it would have been experienced when originally created? For example, if you are primarily interested in the content of a text document, then software that fails to render all of the original formatting may be sufficient. Alternatively, being able to interact with complex software or video games may be crucial in any emulation.</p>
         
         <blockquote>
         <img src="tip.png" alt="White speech bubble with a light bulb." align="left" />
-      	<b>Tip:</b> If you can contact the original creator of the digital content, discuss their desires for emulation and what they consider significant. Artists and other creators may have particular ideas about how best to present their work with newer technology.</i></p>
+      	<b>Tip:</b> If you can contact the original creator of the digital content, discuss their desires for emulation and what they consider significant. Artists and other creators may have particular ideas about how best to present their work with newer technology.</p>
         </blockquote>
         
-        <p>Rendering display. Processing speed.</p>
+        <h3>Effects of hardware</h3>
+        
+        <p>The hardware used to originally display the digital content may be significant to the aesthetic experience in emulation. The resolution and construction of modern monitors differs from past hardware and may contribute to an overall different experience.</p>
+        
+        <p>Emulation allows a modern computer to replicate a past or different computing environment through software, so there will be a difference in processing capabilities between the two. A modern computer may have significantly increased processing power over the emulated environment, which runs the risk of displaying animation much quicker than would have been originally experienced. Alternatively, emulation can cause significant processing load on even a modern computer, causing emulated animation and interaction to move much slower than originally experienced.</p>
         
         <p>For interactive software and video games, emulation through software may not be enough to recreate the significant properties of interacting with the content. Consider the difference between playing an Atari game with joystick controller versus that same game emulated on a modern computer with keyboard and mouse. 
         
@@ -93,6 +110,8 @@
           <img src="mouse.png" align="left" />
         <p>The Internet Archive's software library includes thousands of video games that can be emulated on the website but often without information about how the controls correspond to modern computer keyboards. <a href="https://archive.org/details/atari_2600_library">Try playing a few from the Atari 2600 collection.</a> How does playing these games online compare to using the original joystick controller?</p>         
         </blockquote>
+        
+        <p>Although it may seem desirable to emulate as close to the original experience of a digital object as possible, considering significant properties provides a mode of thinking that centers the user's interests for accessing archival digital material. [Summarize Hedstrom piece about researching user experiences with emulated materials]
         
         <h2>Self-Assessment</h2>
         
@@ -104,14 +123,16 @@
         	<li>Question 3:</li>
         </ul>
         
-        <h2>Supplementary Resources</h2>
+        <p>Now that you understand the basics of determining the appropriate emulation approach for digital content, you're ready to go to <a href="module-3.html">Module 3</a>, where you'll learn about available emulators and use emulation to solve an access problem on the web.</p>
+        
+        <h1>Additional Resources</h1>
         
         <ul>
-        	<li>Resource 1:</li>
+        	<li>Gates, Ethan. (2020, October 14). EaaSI Training Module: Emulation Environments. Software Preservation Network. <a href="https://www.softwarepreservationnetwork.org/eaasi-training-module-emulation-environments/">https://www.softwarepreservationnetwork.org/eaasi-training-module-emulation-environments/</a></li>
         	<p>
-        	<li>Resource 2:</li>
+        	<li>Falcao, Patricia, Annet Dekker, and Pip Laurenson. 2015-2016. "An Exploration of Significance, Dependency, and Virtualization in the Conservation of Software-based Artworks." <i>Electronic Media Review</i> 4. <a href="https://resources.culturalheritage.org/emg-review/volume-4-2015-2016/falcao/">https://resources.culturalheritage.org/emg-review/volume-4-2015-2016/falcao/</a></li>
         	<p>
-        	<li>Resource 3:</li>
+        	<li>Hedstrom, M. L., Lee, C. A., Olson, J. S., & Lampe, C. A. (2006). “The old version flickers more”: Digital preservation from the user’s perspective. <i>American Archivist, 69</i>(1), 159–187. <a href="https://doi.org/10.17723/aarc.69.1.1765364485n41800">https://doi.org/10.17723/aarc.69.1.1765364485n41800</a></li>
         </ul>
 
        
