@@ -35,7 +35,7 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#7fc2ff;
   text-decoration:none;
 }
 
@@ -161,9 +161,18 @@ header ul a:active {
   background-color:#f0f0f0;
 }
 
+.screen-reader-only {
+  position: absolute;
+  width: 1px;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 strong {
-  color:#222;
-  font-weight:500;
+  color:#FFFFFF;
+  font-weight:700;
+  font-style:italic;
 }
 
 header ul li + li + li {
