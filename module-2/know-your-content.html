@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Emulation for Archivists</title>
+
+    <link rel="shortcut icon" type="image/png" href="../img/floppy.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../pygment_trac.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <a href="https://heleix.github.io/emulation-resources/"><img src="../img/computer.png" alt="Desktop computer with two mountains in a white outline."></a>
+        <br>
+        <br>
+        <h1>Emulation for Archivists</h1>
+
+        <p class="view"><a href="../getting-started.html">Getting Started</a>
+        <p class="view"><a href="../module-1/start.html">Module 1: What is emulation?</a>
+        <p class="view"><a href="start.html">Module 2: What you need for emulation</a>
+        <p class="view"><a href="../module-3/start.html">Module 3: Fun with emulators</a>
+        <p class="view"><a href="../conclusion.html">Conclusion and Works Cited</a>
+      </header>
+
+
+      <section>
+        <h1>Know your content</h1>
+
+        <p>You have something you want emulation to help you access, but what is it, exactly? When we use computers to run software and look at files, we are engaging a complex stack that involves hardware, operating system environments, software, and files themselves (Gates 2020). Effective emulation will require determining the appropriate combination of these elements to produce the access result you want. While emulation can ease the hardware requirement, the other three must be considered to work together.</p>
+		<br>
+        <img src="../img/floppydisk.jpg" alt="Photograph of floppy disk with label specifying poems by Dean Terry and minimum system requirements.">
+        <center><font size="-1">Floppy disk with label specifying minimum system requirements. <a href="https://www.flickr.com/photos/16262447@N00/4001755043" target="_blank">"Digital Poems on Floppy Disk from 1994"<span class="screen-reader-only">(opens in a new tab)</span></a> by <a href="https://www.flickr.com/photos/16262447@N00" target="_blank">Dean Terry<span class="screen-reader-only">(opens in a new tab)</span></a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-nd/2.0/?ref=ccsearch&atype=html" target="_blank">CC BY-NC-ND 2.0<span class="screen-reader-only">(opens in a new tab)</span></a>.</font></center>
+        <br>
+        <br>
+        <h2>Review your documentation</h2>
+
+        <p>Start by looking over any documentation you have to accompany the digital content you want to emulate. Is there any accompanying text or labels that indicate system requirements required to run it? Do you know what kind of computer was originally used to create the file? All documentation will be useful to determining the appropriate emulation environment.</p>
+
+        <p>In Module 1, we looked at "The Would-Be Gentleman" case at Stanford University Libraries, in which documentation stored with the game helped the archivists determine the earlier version of MacOS needed to emulate the software.</p>
+
+        <blockquote>
+        <img src="../img/tip.png" alt="White speech bubble with a light bulb." align="left" />
+      	<strong>Tip:</strong> Take careful and detailed notes of any information you can gather while investigating your digital content. This will become important documentation for future archivists!</p>
+        </blockquote>
+        <br>
+        <h2>Analyzing file formats and content</h2>
+
+        <p>File format extensions like .JPG or .PDF can tell you some information about the type of <strong>file</strong> you have, but this is often insufficient for determining the most appropriate way to view it. Formats with the same extensions are not always exactly the same, and especially for those like JPEG and PDF that have been in use for thirty or more years. Different versions with different capabilities may have been released throughout their history. The <a href="http://www.nationalarchives.gov.uk/PRONOM/Default.aspx" target="_blank">PRONOM Technical Registry<span class="screen-reader-only">(opens in a new tab)</span></a> lists four pages of results when searching PDF. How do you know which kind you have?</p>
+
+        <p>Tools like <a href="https://mediaarea.net/en/MediaInfo" target="_blank">MediaInfo<span class="screen-reader-only">(opens in a new tab)</span></a>, <a href="http://jhove.openpreservation.org/" target="_blank">JHOVE<span class="screen-reader-only">(opens in a new tab)</span></a>, and <a href="https://www.nationalarchives.gov.uk/information-management/manage-information/preserving-digital-records/droid/" target="_blank">DROID<span class="screen-reader-only">(opens in a new tab)</span></a> can extract technical information about a file to indicate a corresponding computing environment. DROID refers to PRONOM to identify file formats, and the Library of Congress' <a href="https://www.loc.gov/preservation/digital/formats/index.html" target="_blank">Sustainability of Digital Formats<span class="screen-reader-only">(opens in a new tab)</span></a> is another useful guide for formats. These tools can be especially useful if you encounter a format you're not immediately familiar with, which could mean it's a good case for emulation.</p>
+
+        <p>These tools can help gather information about a specific file, but they may not be able to provide details about additional dependencies or requirements. Nonetheless, understanding as much as you can about the specifics of your file will help determine the appropriate software needed to display it.</p>
+        <br>
+        <h2>Analyzing software</h2>
+
+        <p>All files require <strong>software</strong> to display their content, so your emulation environment will also need to include software within it.</p>
+
+        <p>Some files may require proprietary programs to match their proprietary formats (such as Adobe Photoshop files only opening in Adobe programs), which cases you will likely want to emulate that specific software to access the file. Alternative or open-source software may also be an option, even if the program wasn't the original one used to create the file. Using alternative software requires additional consideration concerning the desired "look and feel" of emulation (see below). For example, the open-source image program GIMP can open Photoshop PSD files, but <a href="https://wiki.gimp.org/wiki/PSD_support" target="_blank">the results will not replicate the complex capabilities of Photoshop's editing suite<span class="screen-reader-only">(opens in a new tab)</span></a>.</p>
+
+        <p>The EaaSI program is developing a Universal Virtual Indicator (UVI) that would automatically match files to required software and dependencies, making opening an obsolete file as easy as clicking a link to its appropriate software and environment. In a <a href="https://www.dpconline.org/blog/wdpd/designing-a-uvi-for-digital-objects" target="_blank">2018 blog post<span class="screen-reader-only">(opens in a new tab)</span></a>, EaaSI's Euan Cochrane describes the process of gathering technical metadata to algorithmically connect formats to software.</p>
+
+        <p>Emulating software is necessary for opening obsolete files, but in many cases, the software itself may be the main goal for access. This includes video games, time-based media, and other custom programs.</p>
+
+        <p>Patricia Falcao, Annet Dekker, and Pip Laurenson at Tate defined the following typology for software-based artworks, which can be applied more generally for any software. This typology provides consideration of what might be necessary to emulate software to run as intended.</p>
+
+        <dl>
+          <dt>Contained</dt>
+          <dd>Software is wholly contained within itself.</dd>
+          <br>
+          <dt>Networked</dt>
+          <dd>Software relies on network connections to access data or perform actions.</dd>
+          <br>
+          <dt>User-dependent</dt>
+          <dd>Software relies on user input to function.</dd>
+          <br>
+          <dt>Generative</dt>
+          <dd>Software is constantly changing as a result of outside connections or input.</dd>
+        </dl>
+
+        <p>If your software originated on a physical storage medium, you will likely want to create a disk image both for preservation and for emulation purposes. A disk image is a file that copies the contents of a disk, such as a floppy disk or CD, that can then be stored and mounted without returning to the original, unstable disk medium. An emulated environment can load the disk image in lieu of inserting the disk each time you access it.</p>
+        <br>
+        <br>
+        <h2>Next: <a href="look-and-feel.html">Look and Feel</a></h2>
+      </section>
+      <footer>
+        <p><small>Created by <a href="https://brianbelak.com/" target="_blank">Brian Belak<span class="screen-reader-only">(opens in a new tab)</span></a> and <a href="https://patricialedesmavillon.com/" target="_blank">Patricia Ledesma Villon<span class="screen-reader-only">(opens in a new tab)</span></a> for Professor Anne Gilliland's Winter 2021 Information Studies 241: Digital Preservation class at UCLA. This website is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0 license<span class="screen-reader-only">(opens in a new tab)</span></a>.</p></small>
+      </footer>
+    </div>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+  </body>
+</html>
